@@ -1,0 +1,45 @@
+
+* {
+    /* タップをしてもハイライトが描画されないようにしネイティブアプリと同じ質感へ */
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    /* リンクを長押しした時に表示されるポップアップメニューを消すために設定 */
+    -webkit-touch-callout: none;
+    /* テキストを長押しすると文字選択モードに切り替わるためその機能を無効化 */
+    -webkit-user-select: none;
+}
+
+body {
+    background-image: url(../img/bg.png);
+    background-siza: cover;
+    color: white;
+    text-align: center;
+}
+
+.counter{
+    margin-top: 70%;
+}
+
+button{
+    display: inline-block;
+    border: none;
+    background-color: transparent;
+    outline: none;
+}
+
+button:active{
+    outline: none;
+}
+
+.reset-button-wrapper{
+    text-align: right;
+    margin: 0 auto;
+    width: 75%;
+}
+
+.count-button{
+    margin-top: 120px;
+}
+
+.count-button:active, .reset-button:active{
+    opacity: 0.4;
+}
